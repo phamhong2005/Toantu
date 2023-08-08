@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<input type="text" name="" id="a">
+<input type="text" name="" id="b">
+<br>
+<button onclick="cong()" style="width: 87px">Additon(+)</button>
+<button onclick="tru()" style="width: 100px">Subtraction(-)</button>
+<button onclick="nhan()">Multiplication (X)</button>
+<button onclick="chia()">Divison (/)</button>
+
+<p>kết quả: <span id="kq"></span></p>
+
+
+<script>
+
+    function cong() {
+        let a = +document.getElementById('a').value
+        let b = +document.getElementById('b').value
+        let ten = a + b
+        document.getElementById('kq').innerHTML = ten
+    }
+
+    function tru() {
+        let a = +document.getElementById('a').value
+        let b = +document.getElementById('b').value
+        let kq = a - b
+        document.getElementById('kq').innerHTML = kq
+    }
+
+    function nhan() {
+        let a = +document.getElementById('a').value
+        let b = +document.getElementById('b').value
+        let kq = a * b
+        document.getElementById('kq').innerHTML = kq
+    }
+
+    function chia() {
+        let a = +document.getElementById('a').value
+        let b = +document.getElementById('b').value
+        let kq = a / b
+        document.getElementById('kq').innerHTML = kq
+    }
+</script>
+
+</body>
+</html>
